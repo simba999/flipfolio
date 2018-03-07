@@ -1,0 +1,154 @@
+body 
+  font-family: 'Proxima Nova', sans-serif 
+
+.tabbar__item, .tabbar__item i, .ons-tabbar__footer
+  -webkit-transform: translate3d(0,0,0)
+  -webkit-backface-visibility: hidden
+  -webkit-transform-style: preserve-3d
+  -webkit-perspective: 1000
+  -webkit-transform: translateZ(0)
+  -webkit-transform: translateY(0)
+
+// Tabs
+.tabbar__item
+  transition: max-width 0.2s ease-in-out
+  max-width: 12%
+  margin: 0 10px
+
+.tab.active 
+  max-width: 80%
+
+// Profile
+#edit-profile  .profile-card 
+  margin: 40px auto 100px !important
+.profile-card
+  height: 100px
+  text-align: center
+  margin: 80px auto 100px
+  .profile-name 
+    margin-top: 16px
+    font-weight: bold
+    font-size: 20px
+  .profile-coins
+    color: #999
+    margin-top: 10px
+    font-size: 14px
+  .profile-image-container
+    width: 150px 
+    heigth: 150px 
+    margin: auto 
+  .profile-image
+    width: 100px
+    height: 100px
+    margin: auto
+    background-color: #ccc
+    border-radius: 100px
+    background-image: url('../images/user.svg') 
+    background-repeat: no-repeat
+    background-size: 100px 100px
+    border-radius: 100px
+
+  .profile-edit
+    width: 30px
+    height: 30px
+    float: right
+    margin: -30px 20px
+    border-radius: 30px
+    background-color: #909090
+    i:before 
+      color: #fff
+      font-size: 30px
+      margin-top: 9px
+
+// Tapbar
+.tabbar 
+  background-color: #FFF !important
+  border-top: 0 !important
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, .1)
+.tapbar i, .toolbar i 
+  font-size: 30px
+  vertical-align: middle
+.tabbar__badge.notification
+  top: -6px
+  margin-left: -10px
+
+// Buttons 
+.button 
+  padding: 4px 20px 3px 20px
+.segment__button
+  border: 0px !important
+// Toolbar
+.toolbar.blue , .list-header 
+  color: #FFF !important
+  background-color: #6CB7E9 !important
+  .toolbar__center, i, .toolbar-button
+    color: #FFF !important
+
+// Lidt
+.list-header 
+  font-weight: bold
+  font-size: 12px
+  padding-top: 3px
+  background-image: none
+
+.list 
+  .list-item:nth-child(odd) 
+    background: #fff
+
+  .list-item:nth-child(odd) 
+    background: #F8FAFB
+
+// Portfolios list
+
+#portfolios-list, #my-portfolios, .card, .portfolio-details
+  .profile-row
+    margin-bottom: 20px
+  .profile-image-container
+    width: 52px
+    padding: 20px 0 0 18px
+  .profile-image
+    width: 42px
+    height: 42px
+    background-image: url('../images/user.svg') 
+    background-repeat: no-repeat
+    background-size: 42px 42px
+    border-radius: 100px
+  .portfolio-name
+    margin-top: 20px
+    line-height: 1.2
+    font-weight: bold
+  .user
+    line-height: 1.2
+    margin-top: 4px
+    font-size: 14px
+    color: #999
+  .list-item__right
+    background-image: none !important
+
+#portfolios-list, #my-portfolios
+  .list-action-item
+    width: 400% !important
+  .list-item
+    padding: 0
+    height: 100px
+// Create portfolio
+#create-portfolio
+  ons-back-button i 
+    fill: red !important
+
+.search
+  margin: 5px
+  width: 99%
+// Login
+#login .card
+  position: relative !important
+  text-align: center
+  width: 100%
+  top: 30px
+  box-shadow: none
+  input 
+    min-width: 200px
+
+// Imports
+@import 'fonts'
+@import 'card'
