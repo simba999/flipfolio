@@ -1,8 +1,7 @@
-import "onsenui/css/onsenui.css";
+import 'onsenui/css/onsenui.css';
 import './custom/onsen-css-components.css';
 import "./css/flipfolio.css";
-import './global';
-import 'rxjs';
+import initJS from './initJS';
 import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from 'react-redux';
@@ -23,4 +22,7 @@ const render = () => {
   );
 };
 
-persistStore(store, persistOptions, (err, rehydratedState) => render());
+persistStore(store, persistOptions, () => {
+  render();
+  initJS();
+});
