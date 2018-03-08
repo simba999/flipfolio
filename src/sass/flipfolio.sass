@@ -1,7 +1,7 @@
 body 
   font-family: 'Proxima Nova', sans-serif 
 
-.tabbar__item, .tabbar__item i, .ons-tabbar__footer
+.tabbar__item,  .tabbar__item i, .bar__item, bar__item i,.ons-tabbar__footer
   -webkit-transform: translate3d(0,0,0)
   -webkit-backface-visibility: hidden
   -webkit-transform-style: preserve-3d
@@ -14,6 +14,12 @@ body
   transition: max-width 0.2s ease-in-out
   max-width: 12%
   margin: 0 10px
+
+.bar__item
+  transition: max-width 0.2s ease-in-out
+  max-width: 12%
+  margin: 0 10px
+  width: 80%
 
 .tab.active 
   max-width: 80%
