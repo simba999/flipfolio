@@ -8,11 +8,12 @@ const MainPage = ({
 }) => (
   <Page>
     <Tabbar
+      id='tabbar'
       className="tapbar"
-      position="auto"
       index={indexPage}
       onPreChange={e => onPreChange(e.index)}
       renderTabs={() => renderTabs()}
+      position="auto"
       swipeable={false}
     />
   </Page>

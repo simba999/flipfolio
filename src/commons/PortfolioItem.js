@@ -76,10 +76,10 @@ const PortfolioItem = ({ chartId, onClick }) => (
         options={doughnutOptions}
         data={doughnutData}
         style={{
-          maxWidth: "70px",
-          minWidth: "15px",
-          maxHeight: "70px",
-          minHeight: "15px"
+          maxWidth:'70px',
+          minWidth: '15px',
+          maxHeight: '70px',
+          minHeight: '15px',
         }}
       />
     </div>
@@ -88,10 +88,13 @@ const PortfolioItem = ({ chartId, onClick }) => (
         options={lineOptions}
         data={lineData}
         style={{
-          maxWidth: "200px",
-          minWidth: "20px",
-          maxHeight: "50px",
-          minHeight: "20px"
+          maxWidth: '200px',
+          minWidth: '20px',
+          maxHeight: '50px',
+          minHeight: '20px',
+          display: 'block',
+          height: '50px',
+          width: '100px',
         }}
       />
     </div>
