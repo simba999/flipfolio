@@ -102,3 +102,27 @@ query PortfolioDetail($portfolioId: ID!) {
   }
 }
 `;
+
+export const GetPortfolioHistoDay = `
+query GetPortfolioHistoDay($portId: ID!, $limit: Int, $toISODate: String, $fromISODate: String) {
+  getPortfolioHistoDay(id: $portId, limit: $limit, toISODate: $toISODate, fromISODate: $fromISODate) {
+    value
+    timestamp
+  }
+}
+` 
+export const GetPortfolioLog = `
+query GetPortfolioLog($portId: ID!, $first: Int, $skip: Int) {
+  allHoldingLogs(first: $first, skip: $skip, filter: {holding: {portfolio: {id: $portId}}}) {
+    id
+    amount
+    createdAt
+    holding {
+      name
+      asset {
+        name
+      }
+    }
+  }
+}
+`
